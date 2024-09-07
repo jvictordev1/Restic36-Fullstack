@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SecureCar</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <img src="./assets/holdingkeys.png" alt="Man holding car key." />
+      <section class="content">
+        <div class="content-header">
+          <h1>SecureCar</h1>
+          <div>
+            <button id="login-btn" class="toggle-button active">Login</button>
+            <button id="register-btn" class="toggle-button">Cadastro</button>
+          </div>
+        </div>
+        <form id="login-form">
+          <input type="email" placeholder="email@email.com" required />
+          <input type="password" placeholder="Senha" required />
+          <button type="submit">Entrar</button>
+        </form>
+        <form id="register-form" class="hidden">
+          <input type="text" placeholder="Nome" required />
+          <input type="email" placeholder="email@email.com" required />
+          <input type="password" placeholder="Senha" required />
+          <input type="password" placeholder="Confirmar senha" required />
+          <button type="submit">Cadastrar</button>
+        </form>
+      </section>
+    </main>
+    <script src="./app/script.js"></script>
+  </body>
+</html>
