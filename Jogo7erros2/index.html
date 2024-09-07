@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <!-- 1 - ausencia da tag title -->
+ <style>
+     body {
+         /* font-famly: Arial, sans-serif; 2 - propriedade font-famly ao inves font-family */
+         margin: 0;
+         padding: 0;
+     }
+
+     #main-header {
+         /* backgroud-color: #f4f4f4; 3 - propriedade backgroud-color ao inves de background-color */
+         padding: 20px;
+         text-align: center;
+     }
+
+     .flex-container {
+         display: flex;
+         flex-direction: row;
+         justify-content: space-around;
+     }
+
+     .flex-item {
+         background-color: #e4e4e4;
+         padding: 15px;
+         /* margn: 5px; 4 - propriedade margn ao invés de margin */
+     }
+
+     .grid-container {
+         display: grid;
+         /* grid-template-colums: 1fr 1fr; 5 - propriedade grid-template-colums ao invés de grid-template-columns */
+         gap: 20px;
+     }
+
+     .grid-item {
+         background-color: #ccc;
+         padding: 20px;
+     }
+
+     /* fotter { 6 - seletor fotter ao invés de footer, os temas não serao aplicados à tag footer */
+         background-color: #f4f4f4;
+         text-align: center;
+         padding: 10px;
+     }
+
+     h1 {
+         color: #333;
+     }
+
+     p {
+         margin: 0;
+     }
+ </style>
+</head>
+<body>
+ <header id="main-header">
+     <h1>Galeria de Fotos</h1>
+ </header>
+ <main class="flex-container">
+     <section class="flex-item">
+         <h2>Imagens em Flexbox</h2>
+         <img src="image1.jpg" alt="Imagem 1" />
+         <img src="image2.jpg" alt="Imagem 2" />
+         <img src="image3.jpg" alt="Imagem 3" />
+     </section>
+     <section class="grid-container">
+         <div class="grid-item">
+            <!-- 7 - apesar de não influenciar na execução do código, é uma boa prática aplicar o fechamento nas tags img abaixo (tag autofechavel) -->
+             <img src="image4.jpg" alt="Imagem 4">
+             <p>Descrição da Imagem 4</p>
+         </div>
+         <div class="grid-item">
+             <img src="image5.jpg" alt="Imagem 5">
+             <p>Descrição da Imagem 5</p>
+         <!-- </dv> 8 - fechamento da tag div esta escrito de maneira errada, está dv -->
+         <div class="grid-item">
+             <img src="image6.jpg" alt="Imagem 6">
+             <p>Descrição da Imagem 6</p>
+         </div>
+         <div class="grid-item">
+             <img src="image7.jpg" alt="Imagem 7">
+             <p>Descrição da Imagem 7</p>
+         </div>
+ </main>
+     <!-- </section> 9 - apesar de não inlfuenciar na execução do código, não é legível deixar o fechamento da tag section nesse local -->
+ <!-- <fotter> 10 - tag footer escrita errada, está escrita fotter -->
+     <p>(c) 2024 Galeria de Fotos</p>
+ </fotter>
+</body>
+</html>
