@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- 1 - ausencia da tag title no head -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style type="text/css">
+      body {
+        /* font-family: saints; 2 - esta fonte não funcionará pois não está importada no documento, se tivesse importada deveria ser declarada como "saints" (string) */
+        margin: 0;
+        padding: 0;
+      }
+
+      header {
+        /* background-colored: #f4f4f4; 3 - propriedade inexistente background-colored ao inves de background-color */
+        padding: 20px;
+        text-align: center;
+      }
+
+      img {
+        width: 100px;
+        height: 100px;
+        border: 1px solid #000;
+      }
+
+      footer {
+        background-color: #f4f4f4;
+        text-align: center;
+        padding: 10px;
+      }
+
+      h1 {
+        /* color: #333 4 - apesar de funcionar (pois a ultima declaração não precisa necessariamente finalizar com ;), é uma boa prática que todas regras css finalizem com ; para evitar possíveis erros */
+      }
+
+      p {
+        margin: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+        <!-- 5 - tag h1 sem fechamento -->
+      <h1>Galeria de Imagens
+    </header>
+    <main>
+      <section>
+        <h2>Imagens</h2>
+        <img src="image1.jpg" alt="Imagem 1" />
+        <!-- 6 - tag img sem atributo alt -->
+        <img src="image2.jpg" />
+        <img src="image3.jpg" alt="Imagem 3" />
+      </section>
+    </main>
+    <footer>
+        <p>(c) 2024 Galeria de Imagens</p>
+        <!--- 7 - Tag footer sem fechamento --->
+  </body>
+</html>
